@@ -1,0 +1,125 @@
+.observation-group {
+    margin: 1% 0 0;
+}
+
+.image-preview-container {
+    width: 100%;
+    max-width: 350px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #f3f3f3;
+}
+
+.observation-image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 170px;
+    object-fit: contain;
+}
+
+.observation-image-col {
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+/* Non-blocking save state of an uploaded image */
+.upload-status {
+    font-size: 0.75rem;
+    line-height: 1.25;
+    padding: 0.125rem 0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.upload-status_pending {
+    color: #8c4b02;
+    background: #fef1cd;
+}
+
+.upload-status_saving {
+    color: #444444;
+    background: #f3f3f3;
+}
+
+.upload-status_failed {
+    color: #ba0517;
+    background: #fef1ee;
+}
+
+.obs-row-container {
+    position: relative;
+    overflow: visible;
+    background-color: whitesmoke;
+}
+
+.corner-tag {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 80px;
+    height: 80px;
+    background: #c9c7c5;
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: normal;
+    justify-content: flex-end;
+    padding: 16px 12px 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.corner-tag::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    clip-path: inherit;
+    box-shadow: inset -3px 3px 0 rgba(255, 255, 255, 0.30);
+    pointer-events: none;
+}
+
+.corner-text {
+    transform: rotate(45deg);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.corner-tag[data-applied="true"] {
+    background: #f89406;
+    box-shadow: 0 3px 12px rgba(46, 132, 74, 0.40);
+}
+
+.corner-tag[data-applied="true"] .corner-text {
+    color: #ffffff;
+    padding: 0 6px 0 0;
+}
+
+@media (max-width: 768px) {
+    .slds-grid.slds-wrap {
+        flex-wrap: wrap !important;
+    }
+
+    .slds-col {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .image-preview-container,
+    .observation-image {
+        max-width: 100%;
+    }
+}
+
+
+lightning-badge {
+    background-color: #a1d9eb;
+}

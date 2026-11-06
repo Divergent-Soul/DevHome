@@ -1,0 +1,86 @@
+<template>
+    <div class="slds-m-top_medium">
+        <template if:true={selectedVisitId}>
+            <lightning-input type="file" label="Select Observation Images" accept={acceptedImageTypes} multiple disabled={disableUpload} onchange={handleFilesChange}></lightning-input>
+        </template>
+    </div>
+
+    <template for:each={observationData} for:item="cd">
+        <div key={cd.ContentDocumentId} class="slds-grid slds-grid_align-spread slds-gutters slds-wrap slds-box observation-group">
+
+            <div class="slds-col slds-size_3-of-12 slds-align_absolute-center observation-image-col">
+                <div class="image-preview-container">
+                    <img src={cd.VersionDataUrl} alt={cd.Title} class="observation-image" />
+                </div>
+                <template lwc:if={cd.uploadStatus}>
+                    <span class={cd.uploadStatus.className} role="status">{cd.uploadStatus.label}</span>
+                </template>
+            </div>
+
+            <div class="slds-col slds-size_8-of-12">
+                <template for:each={cd.Observations} for:item="obsRow">
+                    <div key={obsRow.key} class="slds-grid slds-grid_align-spread slds-gutters slds-wrap slds-box obs-row-container">
+
+                        <template if:true={obsRow.Observations_from_Previous_Visit__c}>
+                            <button class="corner-tag" data-row-id={obsRow.key} data-applied={obsRow.X2x_Penalty_Applicable__c} onclick={handleCornerClick} aria-pressed={obsRow.X2x_Penalty_Applicable__c} title={obsRow.RepeatedLabel} type="button">
+                                <span class="corner-text">{obsRow.RepeatedLabel}</span>
+                            </button>
+                        </template>
+
+                        <div class="slds-col slds-size_11-of-12">
+                            <div class="slds-grid slds-grid_align-spread slds-gutters slds-wrap">
+
+                                <div class="slds-col slds-size_1-of-4">
+                                    <lightning-combobox label="Main Category" placeholder="Select Main category" value={obsRow.Category__c} options={mainCategoryOptions} data-row-id={obsRow.key} data-required="true" onchange={handleCategoryChange}> </lightning-combobox>
+                                </div>
+
+                                <div class="slds-col slds-size_1-of-4">
+                                    <lightning-combobox label="Sub Category" placeholder="Select Sub category" value={obsRow.Sub_Category__c} options={obsRow.subCategoryOptions} data-row-id={obsRow.key} data-required="true" onchange={handleSubCategoryChange}> </lightning-combobox>
+                                </div>
+
+                                <div class="slds-col slds-size_2-of-4">
+                                    <lightning-combobox label="Observation" placeholder="Select observation" value={obsRow.Observation_Non_Compliance__c} options={obsRow.observationOptions} data-row-id={obsRow.key} data-field-name="Observation" data-required="true" onchange={handleObservationAndCommentsChange}> </lightning-combobox>
+                                </div>
+
+                                <div class="slds-col slds-size_1-of-1" lwc:if={obsRow.tags}>
+                                    <template for:each={obsRow.tags} for:item="tag">
+                                        <lightning-badge key={tag} label={tag} class="slds-m-right_x-small slds-m-bottom_x-small slds-m-top_small slds-text-title_bold"> </lightning-badge>
+                                    </template>
+                                </div>
+
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning-textarea label="Comments" value={obsRow.Agent_Comments__c} placeholder="Add comments..." data-row-id={obsRow.key} data-field-name="Comments" onchange={handleObservationAndCommentsChange}> </lightning-textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slds-col slds-size_1-of-12 slds-align_absolute-center">
+                            <lightning-button-icon icon-name="utility:delete" alternative-text="Remove Row" title="Remove Row" onclick={handleRemoveRow} data-row-id={obsRow.key}> </lightning-button-icon>
+                        </div>
+                    </div>
+
+                    <template if:true={obsRow.displayBreak}>
+                        <br key={obsRow.key} />
+                    </template>
+                </template>
+            </div>
+
+            <div class="slds-col slds-size_1-of-12 slds-align_absolute-center">
+                <lightning-button-icon icon-name="utility:add" alternative-text="Add Observation" title="Add Observation" data-row-id={cd.ContentDocumentId} onclick={handleAddObservationRow}> </lightning-button-icon>
+            </div>
+        </div>
+    </template>
+
+    <div class="slds-align_absolute-center slds-m-top_small">
+        <div>
+            <lightning-button label="Create/Modify CVR" class="slds-float_right slds-m-right_small" variant="brand-inverse" onclick={handleCreateModifyCVR}> </lightning-button>
+        </div>
+        <div lwc:if={showNoObsButton}>
+            <lightning-button label="No Observations" variant="destructive" onclick={handleNoObservation} data-status="noobservations" disabled={hasPendingTasks}> </lightning-button>
+        </div>
+        <div lwc:else>
+            <lightning-button variant="brand" label={saveLabel} onclick={handleSaveAll} disabled={disableSave}> </lightning-button>
+            <lightning-button variant="brand" label="Submit" class="slds-m-left_small" data-status="observationrecorded" onclick={handleSubmitVisit} disabled={disableSubmit}></lightning-button>
+        </div>
+    </div>
+</template>

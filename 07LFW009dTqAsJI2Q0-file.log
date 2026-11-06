@@ -1,0 +1,300 @@
+68.0 APEX_CODE,FINEST;APEX_PROFILING,FINEST;CALLOUT,FINEST;DATA_ACCESS,INFO;DB,FINEST;NBA,FINE;SYSTEM,FINE;VALIDATION,INFO;VISUALFORCE,FINER;WAVE,FINEST;WORKFLOW,FINER
+17:24:53.0 (313261)|USER_INFO|[EXTERNAL]|005FW0000017T0e|suriya.selvam-v@dda.gov.ae|(GMT+04:00) Gulf Standard Time (Asia/Dubai)|GMT+04:00
+17:24:53.0 (341347)|EXECUTION_STARTED
+17:24:53.0 (348297)|CODE_UNIT_STARTED|[EXTERNAL]|apex://ZC_Helper/ACTION$saveImageObservations
+17:24:53.0 (1616569)|CODE_UNIT_STARTED|[EXTERNAL]|01pFW000002Mmcj|ZC_Helper.saveImageObservations(Id, String, String, String)
+17:24:53.0 (1785083)|HEAP_ALLOCATE|[95]|Bytes:3
+17:24:53.0 (1843658)|HEAP_ALLOCATE|[100]|Bytes:152
+17:24:53.0 (1857121)|HEAP_ALLOCATE|[417]|Bytes:408
+17:24:53.0 (1868945)|HEAP_ALLOCATE|[430]|Bytes:408
+17:24:53.0 (1888525)|HEAP_ALLOCATE|[317]|Bytes:6
+17:24:53.0 (1904769)|VARIABLE_SCOPE_BEGIN|[15]|ZC_Helper.defaultBH|BusinessHours|true|true
+17:24:53.0 (1941343)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:90
+17:24:53.0 (1945088)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:95
+17:24:53.0 (1947209)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:11
+17:24:53.0 (2052936)|METHOD_ENTRY|[13]|01pFW000002Mmcj|ZC_Helper.ZC_Helper()
+17:24:53.0 (2057665)|STATEMENT_EXECUTE|[13]
+17:24:53.0 (2061382)|STATEMENT_EXECUTE|[13]
+17:24:53.0 (2080350)|HEAP_ALLOCATE|[68]|Bytes:5
+17:24:53.0 (2101329)|HEAP_ALLOCATE|[74]|Bytes:5
+17:24:53.0 (2107332)|HEAP_ALLOCATE|[82]|Bytes:7
+17:24:53.0 (2219328)|HEAP_ALLOCATE|[15]|Bytes:5
+17:24:53.0 (2221999)|STATEMENT_EXECUTE|[15]
+17:24:53.0 (2223686)|HEAP_ALLOCATE|[15]|Bytes:59
+17:24:53.0 (2237132)|HEAP_ALLOCATE|[15]|Bytes:4
+17:24:53.0 (2606662)|SOQL_EXECUTE_BEGIN|[15]|Aggregations:0|SELECT Id FROM BusinessHours WHERE IsDefault = TRUE LIMIT 1
+17:24:53.0 (2619411)|LIMIT_USAGE|[15]|SOQL|1|100
+17:24:53.0 (2624394)|LIMIT_USAGE|[15]|AGGS|0|300
+17:24:53.0 (7716405)|SOQL_EXECUTE_EXPLAIN|[15]|TableScan on BusinessHours : [], cardinality: 2, sobjectCardinality: 4, relativeCost 2.3
+17:24:53.0 (7728595)|SOQL_EXECUTE_END|[15]|Rows:1
+17:24:53.0 (7739655)|LIMIT_USAGE|[15]|SOQL_ROWS|1|50000
+17:24:53.0 (7748555)|HEAP_ALLOCATE|[15]|Bytes:8
+17:24:53.0 (7761426)|HEAP_ALLOCATE|[15]|Bytes:29
+17:24:53.0 (7853208)|HEAP_ALLOCATE|[15]|Bytes:8
+17:24:53.0 (7869877)|HEAP_ALLOCATE|[15]|Bytes:39
+17:24:53.0 (7923427)|HEAP_ALLOCATE|[15]|Bytes:8
+17:24:53.0 (8012987)|VARIABLE_ASSIGNMENT|[15]|ZC_Helper.defaultBH|{"Id":"01mD0000000BDGoIAO"}|0x4552d551
+17:24:53.0 (8017771)|STATEMENT_EXECUTE|[126]
+17:24:53.0 (8018812)|STATEMENT_EXECUTE|[321]
+17:24:53.0 (8019600)|STATEMENT_EXECUTE|[327]
+17:24:53.0 (8020470)|STATEMENT_EXECUTE|[395]
+17:24:53.0 (8021242)|STATEMENT_EXECUTE|[400]
+17:24:53.0 (8021991)|STATEMENT_EXECUTE|[674]
+17:24:53.0 (8036731)|METHOD_EXIT|[13]|ZC_Helper
+17:24:53.0 (8042712)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:24:53.0 (8045105)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:257
+17:24:53.0 (8046829)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:13
+17:24:53.0 (8048549)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:594876
+17:24:53.0 (8054361)|VARIABLE_SCOPE_BEGIN|[209]|visitId|Id|false|false
+17:24:53.0 (8209098)|VARIABLE_ASSIGNMENT|[209]|visitId|"a6dFW0001FOINCCYQ5"
+17:24:53.0 (8213146)|VARIABLE_SCOPE_BEGIN|[209]|jsonData|String|false|false
+17:24:53.0 (8220382)|VARIABLE_ASSIGNMENT|[209]|jsonData|"{\"ContentDocumentId\" (237 more) ..."
+17:24:53.0 (8222791)|VARIABLE_SCOPE_BEGIN|[209]|fileName|String|false|false
+17:24:53.0 (8227206)|VARIABLE_ASSIGNMENT|[209]|fileName|"IMG_5820.jpeg"
+17:24:53.0 (8229122)|VARIABLE_SCOPE_BEGIN|[209]|fileContent|String|false|false
+17:24:53.0 (8234208)|VARIABLE_ASSIGNMENT|[209]|fileContent|"/9j/4AAQSkZJRgABAQAA (594856 more) ..."
+17:24:53.0 (8251418)|HEAP_ALLOCATE|[210]|Bytes:5
+17:24:53.0 (8254083)|STATEMENT_EXECUTE|[209]
+17:24:53.0 (8254978)|STATEMENT_EXECUTE|[210]
+17:24:53.0 (8255636)|STATEMENT_EXECUTE|[210]
+17:24:53.0 (8256422)|STATEMENT_EXECUTE|[211]
+17:24:53.0 (8302245)|HEAP_ALLOCATE|[211]|Bytes:16
+17:24:53.0 (8313748)|CONSTRUCTOR_ENTRY|[211]|01pFW000002Mmcj|<init>()|ZC_Helper.SaveResult
+17:24:53.0 (8329188)|VARIABLE_SCOPE_BEGIN|[321]|this|ZC_Helper.SaveResult|true|false
+17:24:53.0 (8356405)|VARIABLE_ASSIGNMENT|[321]|this|{}|0x78b6e91
+17:24:53.0 (8364251)|HEAP_ALLOCATE|[322]|Bytes:6
+17:24:53.0 (10501594)|STATEMENT_EXECUTE|[321]
+17:24:53.0 (10504159)|STATEMENT_EXECUTE|[322]
+17:24:53.0 (10519400)|HEAP_ALLOCATE|[322]|Bytes:4
+17:24:53.0 (10548151)|VARIABLE_ASSIGNMENT|[322]|this.idMap|{}|0x78b6e91
+17:24:53.0 (10551632)|STATEMENT_EXECUTE|[323]
+17:24:53.0 (10556403)|HEAP_ALLOCATE|[323]|Bytes:4
+17:24:53.0 (10561677)|VARIABLE_ASSIGNMENT|[323]|this.observationsDisplayOrderMap|{}|0x78b6e91
+17:24:53.0 (10564310)|STATEMENT_EXECUTE|[324]
+17:24:53.0 (10617938)|HEAP_ALLOCATE|[324]|Bytes:4
+17:24:53.0 (10649234)|SYSTEM_CONSTRUCTOR_ENTRY|[324]|<init>()
+17:24:53.0 (10667306)|SYSTEM_CONSTRUCTOR_EXIT|[324]|<init>()
+17:24:53.0 (10686115)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:24:53.0 (10694242)|VARIABLE_ASSIGNMENT|[324]|this.uploads|[]|0x78b6e91
+17:24:53.0 (10699420)|CONSTRUCTOR_EXIT|[211]|01pFW000002Mmcj|<init>()|ZC_Helper.SaveResult
+17:24:53.0 (10703448)|VARIABLE_SCOPE_BEGIN|[211]|result|ZC_Helper.SaveResult|true|false
+17:24:53.0 (10740881)|VARIABLE_ASSIGNMENT|[211]|result|{"idMap":"0x5d2a8915","observationsDisplayOrderMap":"0xe8127bc","uploads":"0x52a23f1b"}|0x78b6e91
+17:24:53.0 (10745940)|STATEMENT_EXECUTE|[212]
+17:24:53.0 (10780537)|SYSTEM_METHOD_ENTRY|[212]|String.isBlank(String)
+17:24:53.0 (10804850)|SYSTEM_METHOD_EXIT|[212]|String.isBlank(String)
+17:24:53.0 (10814119)|HEAP_ALLOCATE|[212]|Bytes:28
+17:24:53.0 (10905484)|HEAP_ALLOCATE|[212]|Bytes:33
+17:24:53.0 (10917519)|SYSTEM_METHOD_ENTRY|[1]|Type.Type()
+17:24:53.0 (10919499)|STATEMENT_EXECUTE|[1]
+17:24:53.0 (10923999)|SYSTEM_METHOD_EXIT|[1]|Type
+17:24:53.0 (10927932)|HEAP_ALLOCATE|[212]|Bytes:8
+17:24:53.0 (10942201)|HEAP_ALLOCATE|[212]|Bytes:8
+17:24:53.0 (10946481)|VARIABLE_SCOPE_BEGIN|[4]|this|System.Type|true|false
+17:24:53.0 (10961421)|VARIABLE_ASSIGNMENT|[4]|this|{}|0x4f13c0ca
+17:24:53.0 (10966263)|VARIABLE_SCOPE_BEGIN|[4]|apextype|java:common.apex.runtime.ApexObjectType|true|false
+17:24:53.0 (11037613)|VARIABLE_ASSIGNMENT|[4]|apextype|"ZC_Helper.ObservationWrapper"|0x7e8450f8
+17:24:53.0 (11060795)|HEAP_ALLOCATE|[212]|Bytes:8
+17:24:53.0 (11079704)|HEAP_ALLOCATE|[212]|Bytes:24
+17:24:53.0 (11083916)|SYSTEM_METHOD_ENTRY|[1]|JSON.JSON()
+17:24:53.0 (11085321)|STATEMENT_EXECUTE|[1]
+17:24:53.0 (11087988)|SYSTEM_METHOD_EXIT|[1]|JSON
+17:24:53.0 (11094705)|METHOD_ENTRY|[212]||System.JSON.deserialize(String, System.Type)
+17:24:53.0 (11920458)|METHOD_EXIT|[212]||System.JSON.deserialize(String, System.Type)
+17:24:53.0 (11930451)|VARIABLE_SCOPE_BEGIN|[212]|grp|ZC_Helper.ObservationWrapper|true|false
+17:24:53.0 (11955287)|VARIABLE_ASSIGNMENT|[212]|grp|{"ContentDocumentId":"NewImg-wzjzhp1793971 (6 more) ...","Observations":"0x48a8a253"}|0xb3106ba
+17:24:53.0 (11987404)|SYSTEM_METHOD_ENTRY|[213]|List<ZC_Helper.ObservationRecord>.isEmpty()
+17:24:53.0 (11999217)|SYSTEM_METHOD_EXIT|[213]|List<ZC_Helper.ObservationRecord>.isEmpty()
+17:24:53.0 (12014464)|SYSTEM_METHOD_ENTRY|[213]|String.isBlank(String)
+17:24:53.0 (12020287)|SYSTEM_METHOD_EXIT|[213]|String.isBlank(String)
+17:24:53.0 (12024518)|STATEMENT_EXECUTE|[213]
+17:24:53.0 (12025729)|STATEMENT_EXECUTE|[215]
+17:24:53.0 (12625007)|HEAP_ALLOCATE|[215]|Bytes:4
+17:24:53.0 (12650428)|SYSTEM_CONSTRUCTOR_ENTRY|[215]|<init>()
+17:24:53.0 (12660351)|SYSTEM_CONSTRUCTOR_EXIT|[215]|<init>()
+17:24:53.0 (12662958)|VARIABLE_SCOPE_BEGIN|[215]|observations|List<ZC_Observation__c>|true|false
+17:24:53.0 (12669629)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:24:53.0 (12679631)|VARIABLE_ASSIGNMENT|[215]|observations|[]|0x58d63196
+17:24:53.0 (12689694)|SYSTEM_METHOD_ENTRY|[216]|List<ZC_Helper.ObservationRecord>.iterator()
+17:24:53.0 (12776351)|SYSTEM_METHOD_EXIT|[216]|List<ZC_Helper.ObservationRecord>.iterator()
+17:24:53.0 (12789951)|SYSTEM_METHOD_ENTRY|[216]|system.ListIterator.hasNext()
+17:24:53.0 (12800150)|HEAP_ALLOCATE|[216]|Bytes:5
+17:24:53.0 (12804074)|SYSTEM_METHOD_EXIT|[216]|system.ListIterator.hasNext()
+17:24:53.0 (12811056)|HEAP_ALLOCATE|[216]|Bytes:40
+17:24:53.0 (12816813)|VARIABLE_SCOPE_BEGIN|[216]|record|ZC_Helper.ObservationRecord|true|false
+17:24:53.0 (12850105)|VARIABLE_ASSIGNMENT|[216]|record|{"agentComments":"","category":"","Id":"ObsId-ndynw617939714 (5 more) ...","observationNonCompliance":"","observationsDisplayOrder":2,"repeated":false,"subCategory":"","x2xPenaltyApplicable":false}|0x4ac70042
+17:24:53.0 (12855151)|STATEMENT_EXECUTE|[216]
+17:24:53.0 (12856151)|STATEMENT_EXECUTE|[217]
+17:24:53.0 (12863159)|METHOD_ENTRY|[217]|01pFW000002Mmcj|ZC_Helper.mapObsFields(ZC_Helper.ObservationRecord)
+17:24:53.0 (12871696)|VARIABLE_SCOPE_BEGIN|[344]|record|ZC_Helper.ObservationRecord|true|false
+17:24:53.0 (12882259)|VARIABLE_ASSIGNMENT|[344]|record|{"agentComments":"","category":"","Id":"ObsId-ndynw617939714 (5 more) ...","observationNonCompliance":"","observationsDisplayOrder":2,"repeated":false,"subCategory":"","x2xPenaltyApplicable":false}|0x4ac70042
+17:24:53.0 (12890734)|HEAP_ALLOCATE|[345]|Bytes:5
+17:24:53.0 (12892911)|STATEMENT_EXECUTE|[344]
+17:24:53.0 (12893798)|STATEMENT_EXECUTE|[345]
+17:24:53.0 (12913915)|HEAP_ALLOCATE|[345]|Bytes:4
+17:24:53.0 (12981295)|VARIABLE_SCOPE_BEGIN|[345]|obs|ZC_Observation__c|true|false
+17:24:53.0 (12990222)|VARIABLE_ASSIGNMENT|[345]|obs|{}|0x2374c20d
+17:24:53.0 (12992843)|STATEMENT_EXECUTE|[346]
+17:24:53.0 (13177248)|VARIABLE_ASSIGNMENT|[346]|this.Observation_Non_Compliance__c|""|0x2374c20d
+17:24:53.0 (13181263)|STATEMENT_EXECUTE|[347]
+17:24:53.0 (13226717)|VARIABLE_ASSIGNMENT|[347]|this.ZC_Visit__c|null|0x2374c20d
+17:24:53.0 (13230395)|STATEMENT_EXECUTE|[348]
+17:24:53.0 (13245079)|VARIABLE_ASSIGNMENT|[348]|this.Sub_Category__c|""|0x2374c20d
+17:24:53.0 (13249321)|STATEMENT_EXECUTE|[349]
+17:24:53.0 (13264904)|VARIABLE_ASSIGNMENT|[349]|this.Category__c|""|0x2374c20d
+17:24:53.0 (13269500)|STATEMENT_EXECUTE|[350]
+17:24:53.0 (13283988)|VARIABLE_ASSIGNMENT|[350]|this.Agent_Comments__c|""|0x2374c20d
+17:24:53.0 (13288445)|STATEMENT_EXECUTE|[351]
+17:24:53.0 (13305927)|VARIABLE_ASSIGNMENT|[351]|this.Observations_from_Previous_Visit__c|false|0x2374c20d
+17:24:53.0 (13309915)|STATEMENT_EXECUTE|[352]
+17:24:53.0 (13324357)|VARIABLE_ASSIGNMENT|[352]|this.X2x_Penalty_Applicable__c|false|0x2374c20d
+17:24:53.0 (13328555)|STATEMENT_EXECUTE|[353]
+17:24:53.0 (13343712)|VARIABLE_ASSIGNMENT|[353]|this.Observations_Display_Order__c|2|0x2374c20d
+17:24:53.0 (13347478)|STATEMENT_EXECUTE|[354]
+17:24:53.0 (13389490)|METHOD_EXIT|[217]|01pFW000002Mmcj|ZC_Helper.mapObsFields(ZC_Helper.ObservationRecord)
+17:24:53.0 (13396584)|VARIABLE_SCOPE_BEGIN|[217]|obs|ZC_Observation__c|true|false
+17:24:53.0 (13416114)|VARIABLE_ASSIGNMENT|[217]|obs|{"Observation_Non_Compliance__c":"","Sub_Category__c":"","Category__c":"","Agent_Comments__c":"","Observations_from_Previous_Visit__c":false,"X2x_Penalty_Applicable__c":false,"Observations_Display_Order__c":2}|0x2374c20d
+17:24:53.0 (13421709)|STATEMENT_EXECUTE|[218]
+17:24:53.0 (13442872)|VARIABLE_ASSIGNMENT|[218]|this.ZC_Visit__c|"a6dFW0001FOINCCYQ5"|0x2374c20d
+17:24:53.0 (13446919)|STATEMENT_EXECUTE|[219]
+17:24:53.0 (13467237)|SYSTEM_METHOD_ENTRY|[219]|List<ZC_Observation__c>.add(Object)
+17:24:53.0 (13484786)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:24:53.0 (13491026)|SYSTEM_METHOD_EXIT|[219]|List<ZC_Observation__c>.add(Object)
+17:24:53.0 (13500039)|SYSTEM_METHOD_ENTRY|[216]|system.ListIterator.hasNext()
+17:24:53.0 (13509807)|HEAP_ALLOCATE|[216]|Bytes:5
+17:24:53.0 (13515597)|SYSTEM_METHOD_EXIT|[216]|system.ListIterator.hasNext()
+17:24:53.0 (13522711)|VARIABLE_ASSIGNMENT|[216]|record|null|
+17:24:53.0 (13527478)|STATEMENT_EXECUTE|[221]
+17:24:53.0 (13583704)|DML_BEGIN|[221]|Op:Insert|Type:ZC_Observation__c|Rows:1
+17:24:53.0 (13603967)|LIMIT_USAGE|[221]|DML|1|150
+17:24:53.0 (13610427)|LIMIT_USAGE|[221]|DML_ROWS|1|10000
+17:24:53.0 (13634030)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:25:03.61 (10061993417)|DML_END|[221]
+17:25:03.61 (10062108864)|EXCEPTION_THROWN|[221]|System.DmlException: Insert failed. First exception on row 0; first error: UNABLE_TO_LOCK_ROW, unable to obtain exclusive access to this record or 1 records: a6dFW0001FOINCCYQ5: []
+17:25:03.61 (10064437504)|HEAP_ALLOCATE|[221]|Bytes:163
+17:25:03.61 (10064478688)|VARIABLE_SCOPE_BEGIN|[258]|e|Exception|true|false
+17:25:03.61 (10064531860)|VARIABLE_ASSIGNMENT|[258]|e|"common.apex.runtime.impl.DmlExecutionException: Insert failed. First exception on row 0; first error: UNABLE_TO_LOCK_ROW, unable to obtain exclusive access to this record or 1 records: a6dFW0001FOINCCYQ5: []"|0x18161c3a
+17:25:03.61 (10064537575)|STATEMENT_EXECUTE|[258]
+17:25:03.61 (10064538836)|STATEMENT_EXECUTE|[259]
+17:25:03.61 (10064542314)|HEAP_ALLOCATE|[259]|Bytes:23
+17:25:03.61 (10064546061)|HEAP_ALLOCATE|[259]|Bytes:2
+17:25:03.61 (10064557707)|HEAP_ALLOCATE|[259]|Bytes:38
+17:25:03.61 (10064580786)|METHOD_ENTRY|[259]|01pFW000002Mmcj|ZC_Helper.toAuraException(String, Exception)
+17:25:03.61 (10064610004)|VARIABLE_SCOPE_BEGIN|[314]|prefix|String|false|false
+17:25:03.61 (10064619177)|VARIABLE_ASSIGNMENT|[314]|prefix|"Error saving the ima (18 more) ..."
+17:25:03.61 (10064623839)|VARIABLE_SCOPE_BEGIN|[314]|e|Exception|true|false
+17:25:03.61 (10064653086)|VARIABLE_ASSIGNMENT|[314]|e|"common.apex.runtime.impl.DmlExecutionException: Insert failed. First exception on row 0; first error: UNABLE_TO_LOCK_ROW, unable to obtain exclusive access to this record or 1 records: a6dFW0001FOINCCYQ5: []"|0x18161c3a
+17:25:03.61 (10064666420)|HEAP_ALLOCATE|[315]|Bytes:5
+17:25:03.61 (10064669139)|STATEMENT_EXECUTE|[314]
+17:25:03.61 (10064669943)|STATEMENT_EXECUTE|[315]
+17:25:03.61 (10064733771)|SYSTEM_METHOD_ENTRY|[315]|System.DmlException.getMessage()
+17:25:03.61 (10064746507)|HEAP_ALLOCATE|[315]|Bytes:159
+17:25:03.61 (10064754644)|SYSTEM_METHOD_EXIT|[315]|System.DmlException.getMessage()
+17:25:03.61 (10064758111)|HEAP_ALLOCATE|[315]|Bytes:1
+17:25:03.61 (10064762567)|SYSTEM_METHOD_ENTRY|[315]|System.DmlException.getStackTraceString()
+17:25:03.61 (10064773522)|HEAP_ALLOCATE|[315]|Bytes:57
+17:25:03.61 (10064776181)|SYSTEM_METHOD_EXIT|[315]|System.DmlException.getStackTraceString()
+17:25:03.61 (10064783481)|HEAP_ALLOCATE|[315]|Bytes:255
+17:25:03.61 (10064795424)|SYSTEM_METHOD_ENTRY|[315]|System.debug(APEX_OBJECT, ANY)
+17:25:03.61 (10064805043)|USER_DEBUG|[315]|ERROR|Error saving the image IMG_5820.jpeg: Insert failed. First exception on row 0; first error: UNABLE_TO_LOCK_ROW, unable to obtain exclusive access to this record or 1 records: a6dFW0001FOINCCYQ5: []
+Class.ZC_Helper.saveImageObservations: line 221, column 1
+17:25:03.61 (10064809556)|SYSTEM_METHOD_EXIT|[315]|System.debug(APEX_OBJECT, ANY)
+17:25:03.61 (10064811909)|STATEMENT_EXECUTE|[316]
+17:25:03.61 (10064815878)|SYSTEM_METHOD_ENTRY|[316]|System.DmlException.getMessage()
+17:25:03.61 (10064821178)|HEAP_ALLOCATE|[316]|Bytes:159
+17:25:03.61 (10064823721)|SYSTEM_METHOD_EXIT|[316]|System.DmlException.getMessage()
+17:25:03.61 (10064829595)|HEAP_ALLOCATE|[316]|Bytes:197
+17:25:03.61 (10064873965)|VARIABLE_SCOPE_BEGIN|[316]|ex|System.AuraHandledException|true|false
+17:25:03.61 (10064897133)|VARIABLE_ASSIGNMENT|[316]|ex|"common.apex.runtime.impl.ExecutionException: Script-thrown exception"|0x7ef33e65
+17:25:03.61 (10064900594)|STATEMENT_EXECUTE|[317]
+17:25:03.61 (10064902712)|SYSTEM_METHOD_ENTRY|[317]|System.DmlException.getMessage()
+17:25:03.61 (10064907180)|HEAP_ALLOCATE|[317]|Bytes:159
+17:25:03.61 (10064909855)|SYSTEM_METHOD_EXIT|[317]|System.DmlException.getMessage()
+17:25:03.61 (10064912936)|HEAP_ALLOCATE|[317]|Bytes:197
+17:25:03.61 (10064932015)|SYSTEM_METHOD_ENTRY|[317]|Exception.setMessage(String)
+17:25:03.61 (10064949143)|SYSTEM_METHOD_EXIT|[317]|Exception.setMessage(String)
+17:25:03.61 (10064951434)|STATEMENT_EXECUTE|[318]
+17:25:03.61 (10064957445)|METHOD_EXIT|[259]|01pFW000002Mmcj|ZC_Helper.toAuraException(String, Exception)
+17:25:03.61 (10065006567)|FATAL_ERROR|System.AuraHandledException: Error saving the image IMG_5820.jpeg: Insert failed. First exception on row 0; first error: UNABLE_TO_LOCK_ROW, unable to obtain exclusive access to this record or 1 records: a6dFW0001FOINCCYQ5: []
+
+Class.ZC_Helper.toAuraException: line 316, column 1
+Class.ZC_Helper.saveImageObservations: line 259, column 1
+17:25:03.61 (10065015013)|FATAL_ERROR|System.AuraHandledException: Error saving the image IMG_5820.jpeg: Insert failed. First exception on row 0; first error: UNABLE_TO_LOCK_ROW, unable to obtain exclusive access to this record or 1 records: a6dFW0001FOINCCYQ5: []
+
+Class.ZC_Helper.toAuraException: line 316, column 1
+Class.ZC_Helper.saveImageObservations: line 259, column 1
+17:25:03.65 (10065022385)|CUMULATIVE_LIMIT_USAGE
+17:25:03.65 (10065022385)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 10000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:25:03.65 (10065022385)|TOTAL_EMAIL_RECIPIENTS_QUEUED|0
+17:25:03.65 (10065022385)|STATIC_VARIABLE_LIST|
+  int:BYTES:0
+  int:BYTES:0
+  byte[]:DigitOnes:0
+  byte[]:DigitTens:0
+  Boolean:FALSE:0
+  int:MAX_EXPONENT:0
+  double:MAX_VALUE:0
+  int:MAX_VALUE:0
+  int:MIN_EXPONENT:0
+  double:MIN_NORMAL:0
+  double:MIN_VALUE:0
+  int:MIN_VALUE:0
+  double:NEGATIVE_INFINITY:0
+  double:NaN:0
+  double:POSITIVE_INFINITY:0
+  int:PRECISION:0
+  int:SIZE:0
+  int:SIZE:0
+  Boolean:TRUE:0
+  String:__sfdcInnerTypes:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcAdditionalCodeLocations:0
+  String:_sfdcSuppressedCodeLocations:0
+  BusinessHours:_static_defaultBH:0
+  char[]:digits:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+  long:serialVersionUID:0
+
+17:25:03.65 (10065022385)|CUMULATIVE_LIMIT_USAGE_END
+
+17:25:03.61 (10065112915)|CODE_UNIT_FINISHED|ZC_Helper.saveImageObservations(Id, String, String, String)
+17:25:03.65 (10065131920)|CUMULATIVE_PROFILING_BEGIN
+17:25:03.65 (10065131920)|CUMULATIVE_PROFILING|SOQL operations|
+Class.ZC_Helper: line 15, column 1: [SELECT Id FROM BusinessHours WHERE IsDefault = true LIMIT 1]: executed 1 time in 6 ms
+
+17:25:03.65 (10065131920)|CUMULATIVE_PROFILING|No profiling information for SOSL operations
+17:25:03.65 (10065131920)|CUMULATIVE_PROFILING|DML operations|
+Class.ZC_Helper.saveImageObservations: line 221, column 1: Insert: List<ZC_Observation__c>: executed 1 time in 10050 ms
+
+17:25:03.65 (10065131920)|CUMULATIVE_PROFILING|method invocations|
+External entry point: public static ZC_Helper.SaveResult saveImageObservations(Id, String, String, String): executed 1 time in 10063 ms
+Class.ZC_Helper.saveImageObservations: line 211, column 1: global ZC_Helper.SaveResult(): executed 1 time in 3 ms
+Class.ZC_Helper.saveImageObservations: line 212, column 1: public static Boolean isBlank(String): executed 2 times in 1 ms
+Class.ZC_Helper.SaveResult.<init>: line 324, column 1: global public List<ZC_Helper.UploadedImage>(): executed 1 time in 0 ms
+Class.ZC_Helper.saveImageObservations: line 259, column 1: private static System.AuraHandledException toAuraException(String, Exception): executed 1 time in 0 ms
+Class.ZC_Helper.saveImageObservations: line 213, column 1: global public Boolean isEmpty(): executed 2 times in 0 ms
+Class.ZC_Helper.saveImageObservations: line 215, column 1: global public List<ZC_Observation__c>(): executed 1 time in 0 ms
+Class.ZC_Helper.saveImageObservations: line 216, column 1: global public System.Iterator iterator(): executed 3 times in 0 ms
+Class.ZC_Helper.saveImageObservations: line 217, column 1: private static ZC_Observation__c mapObsFields(ZC_Helper.ObservationRecord): executed 1 time in 0 ms
+Class.ZC_Helper.saveImageObservations: line 219, column 1: global public Object add(Object): executed 1 time in 0 ms
+Class.ZC_Helper.toAuraException: line 315, column 1: global public String getMessage(): executed 3 times in 0 ms
+
+17:25:03.65 (10065131920)|CUMULATIVE_PROFILING_END
+17:25:03.61 (10065545162)|CODE_UNIT_FINISHED|apex://ZC_Helper/ACTION$saveImageObservations
+17:25:03.61 (10065551796)|EXECUTION_FINISHED
